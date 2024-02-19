@@ -1,5 +1,5 @@
 %cd%
-set /p Input=Enter commit comment:
+set /p Input=Enter commit comment: 
 git init
 git remote add origin https://github.com/Tobernt/Hellcrawler.git
 git add .
