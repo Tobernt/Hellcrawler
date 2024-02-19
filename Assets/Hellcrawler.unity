@@ -123,8 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &135296912
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +794,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
->>>>>>> 50abe68daa4970723e33ffa90293b9db57a77f7e
 --- !u!1 &2073461997
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,8 +996,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2073462000}
-<<<<<<< HEAD
   - {fileID: 2143146250}
-=======
   - {fileID: 632873368}
->>>>>>> 50abe68daa4970723e33ffa90293b9db57a77f7e
