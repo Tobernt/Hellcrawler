@@ -7,4 +7,4 @@ git add .
 git status
 git commit -m "%Input%"
 git push
-cmd /k 
+cmd /k
