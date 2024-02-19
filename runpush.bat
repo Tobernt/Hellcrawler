@@ -1,5 +1,6 @@
 %cd%
 set /p Input=Enter commit comment: 
+git config --global http.version HTTP/1.1
 git init
 git remote add origin https://github.com/Tobernt/Hellcrawler.git
 git add .
