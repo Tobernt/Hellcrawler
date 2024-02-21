@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 2f;
     public float jumpingPower = 6f;
     private bool isFacingRight = true;
+    private int doubleJump = 0;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -28,14 +29,20 @@ void Update()
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && doubleJump < 1)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            doubleJump++;
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        if(IsGrounded())
+        {
+            doubleJump = 0;
         }
 
         Flip();

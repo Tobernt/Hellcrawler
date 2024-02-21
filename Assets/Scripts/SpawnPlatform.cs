@@ -12,14 +12,14 @@ public class SpawnPlatform : MonoBehaviour
         void Start()
     {
         InvokeRepeating("spawnPlatform", spawnTime, spawnTime);
-        Vector3 randomSpawnPosition = new Vector3(Random.Range(-1f, 1f), this.transform.position.y, 0);
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(-2f, 2f), this.transform.position.y, 0);
         Instantiate(Platform, randomSpawnPosition, Quaternion.identity);
     }
     // Update is called once per frame
 
     void spawnPlatform()
     {
-        Vector3 randomSpawnPosition = new Vector3(Random.Range(-1f, 1f), this.transform.position.y, 0);
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(-2f, 2f), this.transform.position.y, 0);
         Instantiate(Platform, randomSpawnPosition, Quaternion.identity);
     }
 
