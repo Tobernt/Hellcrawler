@@ -863,7 +863,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e9a4efa52677b44b4e6c07e14986af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.0003
 --- !u!81 &733718832
 AudioListener:
   m_ObjectHideFlags: 0
@@ -988,7 +987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platform: {fileID: 7617284657458047798, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
-  spawnTime: 5
 --- !u!1 &883074322
 GameObject:
   m_ObjectHideFlags: 0

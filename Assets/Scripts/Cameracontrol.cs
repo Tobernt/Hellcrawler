@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cameracontrol : MonoBehaviour
 {
-    public float speed = 0.001f;
+    private float speed = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,6 @@ public class Cameracontrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, speed);
+        transform.position += new Vector3(0, speed * Time.deltaTime);
     }
 }   

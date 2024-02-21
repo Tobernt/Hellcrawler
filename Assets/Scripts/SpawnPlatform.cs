@@ -6,7 +6,7 @@ public class SpawnPlatform : MonoBehaviour
 {
 
     public GameObject Platform;
-    public float spawnTime = 2f;
+    private float spawnTime = 5f;
 
     // Start is called before the first frame update
         void Start()
