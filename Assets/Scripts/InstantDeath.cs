@@ -11,6 +11,7 @@ public class InstantDeath : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
 		Destroy(collision.gameObject);
+
 	}
 	private void Start()
 	{

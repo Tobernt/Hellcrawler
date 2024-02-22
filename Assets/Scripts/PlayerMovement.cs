@@ -87,5 +87,5 @@ public void Die()
         _active = false;
         _collider.enabled = false;
         MiniJump();
-    }
+	}
 }
