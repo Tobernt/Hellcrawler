@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 656256493}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Destroyable object
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1087,6 +1087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
+  _active: 1
   rb: {fileID: 656256497}
   groundCheck: {fileID: 851409175}
   groundLayer:

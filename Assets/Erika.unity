@@ -622,7 +622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e9a4efa52677b44b4e6c07e14986af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.0003
 --- !u!81 &733739828
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1398,7 +1397,7 @@ GameObject:
   - component: {fileID: 1835847612}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Destroyable object
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1456,6 +1455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
+  _active: 1
   rb: {fileID: 1835847616}
   groundCheck: {fileID: 1015811957}
   groundLayer:
@@ -1647,7 +1647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platform: {fileID: 7617284657458047798, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
-  spawnTime: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
