@@ -12,7 +12,6 @@ public class Cameracontrol : MonoBehaviour
     {
         Transform myTransform = transform;
         Vector2 myPosition = transform.position;
-
     }
 
     // Update is called once per frame
