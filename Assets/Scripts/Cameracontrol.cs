@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Cameracontrol : MonoBehaviour
 {
-    private float speed = 0.5f;
+    private float speed = 2.5f;
+    public GameObject ScrollingBackground;
 
     // Start is called before the first frame update
     void Start()
@@ -18,5 +19,11 @@ public class Cameracontrol : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(0, speed * Time.deltaTime);
+
+        if (transform.position.y > 50)
+        {
+            speed = 0;
+            ScrollingBackground.GetComponent<ScrollingBackground>().speed = 0f;
+        }
     }
 }   

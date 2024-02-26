@@ -1660,6 +1660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e9a4efa52677b44b4e6c07e14986af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScrollingBackground: {fileID: 466884779}
 --- !u!114 &1668966728 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5335191894486572307, guid: e4a925d252aaa5d488bce68856f51b8f, type: 3}
