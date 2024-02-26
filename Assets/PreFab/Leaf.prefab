@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 978128060934262682}
   - component: {fileID: 5455505168699847050}
   - component: {fileID: 5923084752016497729}
-  m_Layer: 3
-  m_Name: PlatformPrefab
+  m_Layer: 6
+  m_Name: Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7617284657458047798}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.3078, y: -0.1087, z: 0}
-  m_LocalScale: {x: 2.3, y: 1.2, z: 1}
+  m_LocalScale: {x: 2.7356198, y: 2.1238801, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,18 +67,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0012385249, y: 0.0047849193}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.16}
+    oldSize: {x: 0.14, y: 0.11}
     newSize: {x: 0.32, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.17}
+  m_Size: {x: 0.15902054, y: 0.13491063}
   m_EdgeRadius: 0
 --- !u!50 &978128060934262682
 Rigidbody2D:
@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 3
+  m_Constraints: 1
 --- !u!251 &5455505168699847050
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -556077750, guid: 2f74e021c8573d14b8dfb34f5b79bf06, type: 3}
+  m_Sprite: {fileID: -2011069101, guid: 4fe6066fb106f4044bb253fa21959af6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

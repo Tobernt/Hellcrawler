@@ -3,20 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Destroyable object
-  - BossPlatforms
-  - Wall
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
-  - Deadzone
-  - Credits
+  - 
+  - 
+  - 
   - 
   - 
   - 
