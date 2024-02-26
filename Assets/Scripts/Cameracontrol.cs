@@ -6,6 +6,10 @@ using UnityEngine;
 public class Cameracontrol : MonoBehaviour
 {
     private float speed = 0.5f;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 275e756ca92ff7960e348c7d1ceda61f6e12c0ca
     public GameObject ScrollingBackground;
     public GameObject checkpointGround;
 
