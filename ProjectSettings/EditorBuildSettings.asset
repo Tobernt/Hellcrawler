@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Hellcrawler.unity
     guid: 58c7eaa0258eebd4886df478abf1531c
   - enabled: 1
-    path: Assets/Scenes/Erika Lvl2.unity
+    path: Assets/Erika Lvl2.unity
     guid: 8a2ab2f760f6021479b1663ac25c0ab9
   - enabled: 1
     path: Assets/Scenes/Space Lvl 6.unity
