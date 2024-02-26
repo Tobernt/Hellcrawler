@@ -191,15 +191,15 @@ Canvas:
   m_GameObject: {fileID: 63979752}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1369702867}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1661,6 +1661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScrollingBackground: {fileID: 466884779}
+  checkpointGround: {fileID: 0}
 --- !u!114 &1668966728 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5335191894486572307, guid: e4a925d252aaa5d488bce68856f51b8f, type: 3}
