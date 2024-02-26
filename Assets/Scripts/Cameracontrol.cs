@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cameracontrol : MonoBehaviour
 {
-    private float speed = 2.5f;
+    private float speed = 0.4f;
     public GameObject ScrollingBackground;
 
     // Start is called before the first frame update
