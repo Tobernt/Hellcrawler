@@ -860,10 +860,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1518776194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 390.43, y: -86.185}
-  m_SizeDelta: {x: -890, y: 50}
+  m_AnchoredPosition: {x: -174, y: -86}
+  m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915686288
 MonoBehaviour:
@@ -1614,7 +1614,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1015811957}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   anim: {fileID: 0}
 --- !u!61 &1835847615
 BoxCollider2D:
