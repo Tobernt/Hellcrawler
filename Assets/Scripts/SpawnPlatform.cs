@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnPlatform : MonoBehaviour
@@ -27,5 +28,10 @@ public class SpawnPlatform : MonoBehaviour
     void Update()
     {
         spawnTime += Time.deltaTime;
+
+        if (transform.position.y > 50)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
