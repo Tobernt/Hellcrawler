@@ -5,7 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Destroyable object
+<<<<<<< HEAD
   - Checkpoint
+=======
+  - BossPlatforms
+  - Wall
+>>>>>>> d5cac166914056d783b904c3303ab4d86d4da0fc
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - UI
   - Ground
   - Deadzone
-  - 
+  - Credits
   - 
   - 
   - 

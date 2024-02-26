@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+<<<<<<< HEAD
+=======
+    path: Assets/Scenes/Hellcrawler.unity
+    guid: 58c7eaa0258eebd4886df478abf1531c
+  - enabled: 1
+>>>>>>> d5cac166914056d783b904c3303ab4d86d4da0fc
     path: Assets/Scenes/Erika Lvl2.unity
     guid: 8a2ab2f760f6021479b1663ac25c0ab9
   - enabled: 1
