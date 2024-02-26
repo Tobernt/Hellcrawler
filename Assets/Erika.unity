@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b35af4f5eced941b59e3b59ea38562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 0.5
   backgroundRenderer: {fileID: 659993013}
 --- !u!23 &659993013
 MeshRenderer:
@@ -585,7 +585,7 @@ Transform:
   m_GameObject: {fileID: 659993011}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0015, y: 0.0001, z: 10.055}
+  m_LocalPosition: {x: 0, y: 0, z: 10.19}
   m_LocalScale: {x: 7.1605926, y: 4.029137, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -969,23 +969,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1987501173691934853, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.050280087
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8733889916947338126, guid: d574330305b1b0940856863b0ff33c0e, type: 3}
       propertyPath: m_Size.x
-      value: 2
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
