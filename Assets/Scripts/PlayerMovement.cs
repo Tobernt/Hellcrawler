@@ -21,10 +21,17 @@ public class PlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         _collider = GetComponent<Collider2D>();
+        Time.timeScale = 0;
     }
 
 void Update()
     {
+
+        void ResumeGame()
+        {
+            Time.timeScale = 1;
+        }
+
         if (!_active)
         {
             return;
@@ -36,7 +43,12 @@ void Update()
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && doubleJump < 1)
+        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Horizontal"))
+        {
+            Time.timeScale = 1;
+        }
+
+            if (Input.GetButtonDown("Jump") && doubleJump < 1)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             doubleJump++;
