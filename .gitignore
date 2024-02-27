@@ -57,7 +57,15 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+<<<<<<< HEAD
 *.db
 /[Aa]ssets/[Uu]nity.*/*
 /ProjectSettings/*
 /Assets/Unity.VisualScripting.Generated/*
+=======
+
+*.db
+/[Aa]ssets/[Uu]nity.*/*
+/ProjectSettings/*
+/Assets/Unity.VisualScripting.Generated/*
+>>>>>>> ece5299f5e0954d2de9008bc8a5d03e105dbf67a
