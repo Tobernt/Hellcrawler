@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private int doubleJump = 0;
     private Collider2D _collider;
+    private bool Paused = true;
 
     [Header("Movement variables")]
     [SerializeField] private bool _active = true;
@@ -27,25 +28,24 @@ public class PlayerMovement : MonoBehaviour
 void Update()
     {
 
-        void ResumeGame()
-        {
-            Time.timeScale = 1;
-        }
-
         if (!_active)
         {
             return;
         }
+
+
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+
         if (Input.GetButtonDown("Horizontal")) ;
         {
             anim.Play("RunningAnim");
         }
 
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Horizontal"))
+        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Horizontal") && Paused == true)
         {
             Time.timeScale = 1;
+            Paused = false;
         }
 
             if (Input.GetButtonDown("Jump") && doubleJump < 1)
