@@ -1,6 +1,14 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/Scripts/StartOver.cs.meta
+<<<<<<< HEAD
 guid: 3bcf0aee627bcec4db811427f12c3941
+=======
+<<<<<<< HEAD
+guid: 7b009641cc2287343b06a739858db86d
+=======
+guid: 94d7fa9d6a35b9740a728352f9f00810
+>>>>>>> 073864732ed3227a8abe2d87b57b3fd08a56fce5
+>>>>>>> 20355a8361c9e7b51fff601bb6a81e1ce6370c86
 ========
 guid: 3d1f71ce90bd25742813da1c7e4b3c9d
 >>>>>>>> db0932e190911e00245907d323d1eda25c98c480:Assets/Scripts/Checkpoint.cs.meta
