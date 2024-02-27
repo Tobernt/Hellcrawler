@@ -4,40 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
   m_Scenes: []
-=======
-<<<<<<< HEAD
-  m_Scenes: []
-=======
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 16883b2121989f140b53c963ab72409f
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: fd869152632ed1a46a0d44d522a81e46
-  - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 3f5db1902d803c9459e0b3c3a5ba7292
-  - enabled: 1
-    path: Assets/Erika Lvl2.unity
-    guid: 8a2ab2f760f6021479b1663ac25c0ab9
-  - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: 58c7eaa0258eebd4886df478abf1531c
-<<<<<<< HEAD
-  - enabled: 1
-    path: Assets/Scenes/Space Lvl 6.unity
-    guid: 631e66a0f6ce69049ab9b693fe38bf70
-  - enabled: 1
-    path: Assets/Scenes/Level7.unity
-    guid: fc1ada2b0aed3b64bbc8dca1a24923d5
-  - enabled: 1
-    path: Assets/Scenes/Cloud Lvl 8.unity
-    guid: 4c5645030a2bf0747a526c9c7cda813c
-=======
->>>>>>> 275e756ca92ff7960e348c7d1ceda61f6e12c0ca
->>>>>>> 073864732ed3227a8abe2d87b57b3fd08a56fce5
->>>>>>> 20355a8361c9e7b51fff601bb6a81e1ce6370c86
   m_configObjects: {}
