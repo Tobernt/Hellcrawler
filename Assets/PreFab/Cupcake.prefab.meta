@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/PreFab/Spear.prefab.meta
+guid: 3ba812dccbc11dc4a9bad6ba151ecdd8
+========
 guid: d359864655310b14cb717826b9e9ea3d
+>>>>>>>> ece5299f5e0954d2de9008bc8a5d03e105dbf67a:Assets/PreFab/Cupcake.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
