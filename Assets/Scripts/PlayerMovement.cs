@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 6f;
     private bool isFacingRight = true;
     private int doubleJump = 0;
+    private Collider2D _collider;
+    private bool Paused = true;
 
     [Header("Movement variables")]
     [SerializeField] private Rigidbody2D rb;
@@ -23,6 +25,13 @@ public class PlayerMovement : MonoBehaviour
 
 void Update()
     {
+        /*if (!_active)
+        {
+            return;
+        }*/
+
+
+        horizontal = Input.GetAxisRaw("Horizontal");
 
         void ResumeGame()
         {
@@ -34,11 +43,10 @@ void Update()
             anim.Play("RunningAnim");
         }
 
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Horizontal"))
+        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Horizontal") && Paused == true)
         {
             Time.timeScale = 1;
+            Paused = false;
         }
 
             if (Input.GetButtonDown("Jump") && doubleJump < 1)

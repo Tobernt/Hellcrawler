@@ -14,17 +14,15 @@ public class AngelBossScript : MonoBehaviour
     private float bottomLimit = 0.8f;
     private int direction = 1;
     private float directionVertical;
+    private float swordSpawnTimer = 0f;
+    private float swordSpawnInterval = 6f;
 
-    public SpawnPhaseTwoScript other;
-    public SpawnPhaseTwoScript otherTwo;
 
     private bool phaseOne = true;
     private bool phaseTwo = false;
     private bool phaseThree = false;
 
     private bool Hit = false;
-
-    private bool SpawnedPhaseTwo = false;
 
 
     GameObject[] allPlatforms;
@@ -36,23 +34,25 @@ public class AngelBossScript : MonoBehaviour
     void Start()
     {
         allPlatforms = GameObject.FindGameObjectsWithTag("BossPlatforms");
+        DeactivateBossPlatforms2();
     }
+    private void DeactivateBossPlatforms2()
+    {
+        GameObject[] bossPlatforms2 = GameObject.FindGameObjectsWithTag("BossPlatforms2");
 
+        foreach (GameObject platform in bossPlatforms2)
+        {
+            platform.SetActive(false);
+            Debug.Log("Deactivating platform: " + platform.name);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
 
-        if (Hit == true) 
-        {  
-        reactivateTimer += Time.deltaTime;
-        }
-
-        if (phaseTwo == true && SpawnedPhaseTwo == false)
+        if (Hit == true)
         {
-
-            other.spawnPlatform();
-            otherTwo.spawnPlatform();
-            SpawnedPhaseTwo = true;
+            reactivateTimer += Time.deltaTime;
         }
 
         if (reactivateTimer > 3)
@@ -60,7 +60,7 @@ public class AngelBossScript : MonoBehaviour
             reactivatePlatforms();
             Hit = false;
             reactivateTimer = 0;
-            
+
         }
 
         float rz = Mathf.SmoothStep(-10, RotAngleZ, Mathf.PingPong(Time.time * speed, 1));
@@ -101,15 +101,40 @@ public class AngelBossScript : MonoBehaviour
             }
         }
 
+        if (phaseTwo)
+        {
+            Debug.Log("Entering phaseTwo");
+            GameObject[] bossPlatforms2 = GameObject.FindGameObjectsWithTag("BossPlatforms2");
+
+            foreach (GameObject platform in bossPlatforms2)
+            {
+                platform.SetActive(true);
+                Debug.Log("Activating platform: " + platform.name);
+            }
+        }
+
+
         if (Health <= 0)
         {
             Destroy(this.gameObject);
         }
+
+        if (Health >= 6 && phaseOne)
+        {
+            swordSpawnTimer += Time.deltaTime;
+        }
+
+        if (swordSpawnTimer >= swordSpawnInterval)
+        {
+            SpawnSwords();
+            swordSpawnTimer = 0f;
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && Health >= 7)
+        if (collision.gameObject.tag == "Player" && Health >= 0)
         {
             Health--;
             foreach (GameObject platforms in allPlatforms)
@@ -121,11 +146,40 @@ public class AngelBossScript : MonoBehaviour
 
     private void reactivatePlatforms()
     {
-        if (phaseOne == true) 
-        { 
-        foreach (GameObject platforms in allPlatforms)
-        platforms.SetActive(true);
-        reactivateTimer = 0;
+        if (phaseOne == true)
+        {
+            foreach (GameObject platforms in allPlatforms)
+                platforms.SetActive(true);
+            reactivateTimer = 0;
+        }
+    }
+
+    private void SpawnSwords()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                float delay = i * 0.5f; // Adjust this value for the delay between each sword spawn
+
+                Invoke("SpawnSingleSword", delay);
+            }
+        }
+    }
+
+    private void SpawnSingleSword()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            float xOffset = 0.2f;  // Adjust this value for the space between swords
+            Vector3 spawnPosition = new Vector3(transform.position.x + xOffset, transform.position.y - 0.25f, 0);
+            Quaternion spawnRotation = Quaternion.LookRotation(Vector3.forward, player.transform.position - spawnPosition) * Quaternion.Euler(0, 0, -37);
+
+            Instantiate(Resources.Load<GameObject>("PreFab/Sword"), spawnPosition, spawnRotation);
         }
     }
 }
