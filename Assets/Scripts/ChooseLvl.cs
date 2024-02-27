@@ -1,13 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ChooseLvl : MonoBehaviour
 {
-    public void Choose()
+    public int levelIndex; // Håller reda på vilken nivå knappen representerar
+
+    void Start()
     {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        // Hämta referensen till knappen och lägg till en lyssnare för dess klickhändelse
+        Button button = GetComponent<Button>();
+        button.onClick.AddListener(OnClick);
     }
 
+    void OnClick()
+    {
+        // Ladda den specifika nivån när knappen klickas
+        SceneManager.LoadScene(levelIndex);
+    }
 }
