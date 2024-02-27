@@ -1976,6 +1976,7 @@ GameObject:
   - component: {fileID: 1450518267}
   - component: {fileID: 1450518268}
   - component: {fileID: 1450518266}
+  - component: {fileID: 1450518271}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2043,11 +2044,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450518264}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelIndex: 0
 --- !u!114 &1450518269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2086,6 +2088,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450518264}
   m_CullTransparentMesh: 1
+--- !u!114 &1450518271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450518264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e667c96d75a01d342854bb11403a493e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1479933573
 GameObject:
   m_ObjectHideFlags: 0
