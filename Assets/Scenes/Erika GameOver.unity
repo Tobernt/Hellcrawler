@@ -1726,6 +1726,7 @@ GameObject:
   - component: {fileID: 1473474188}
   - component: {fileID: 1473474187}
   - component: {fileID: 1473474186}
+  - component: {fileID: 1473474189}
   m_Layer: 5
   m_Name: MainMenu Button
   m_TagString: Untagged
@@ -1797,9 +1798,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1613620603}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1847,6 +1848,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473474184}
   m_CullTransparentMesh: 1
+--- !u!114 &1473474189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473474184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c19a3d61171f194bbf7473d32ce25fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1555234261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,7 +2085,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
-  _active: 1
   rb: {fileID: 1593293941}
   groundCheck: {fileID: 1170511597}
   groundLayer:
@@ -2318,7 +2330,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613620598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7811ac76203d6df448399996a4876d7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c19a3d61171f194bbf7473d32ce25fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1728019524
@@ -2333,6 +2345,7 @@ GameObject:
   - component: {fileID: 1728019528}
   - component: {fileID: 1728019527}
   - component: {fileID: 1728019526}
+  - component: {fileID: 1728019529}
   m_Layer: 5
   m_Name: Restart Button
   m_TagString: Untagged
@@ -2404,9 +2417,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1613620603}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2454,6 +2467,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728019524}
   m_CullTransparentMesh: 1
+--- !u!114 &1728019529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728019524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c19a3d61171f194bbf7473d32ce25fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875775803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,6 +2781,7 @@ GameObject:
   - component: {fileID: 2093303186}
   - component: {fileID: 2093303185}
   - component: {fileID: 2093303184}
+  - component: {fileID: 2093303187}
   m_Layer: 5
   m_Name: Load Button
   m_TagString: Untagged
@@ -2827,9 +2853,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1613620603}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Loadcheckpoint
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2877,6 +2903,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093303182}
   m_CullTransparentMesh: 1
+--- !u!114 &2093303187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093303182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c19a3d61171f194bbf7473d32ce25fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

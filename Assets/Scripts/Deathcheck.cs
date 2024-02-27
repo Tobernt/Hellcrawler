@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Deathcheck : MonoBehaviour
 {
@@ -8,8 +9,8 @@ public class Deathcheck : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            SceneManager.LoadScene(9);
             //On Death of Player
-            // Insert GameOverMenu
         }
         Destroy(collision.gameObject);
     }

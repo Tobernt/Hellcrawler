@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/Resources/PreFab/Spear.prefab.meta
+<<<<<<< HEAD
 guid: bc1743961d2f6d2429c6c2b8bee18249
+=======
+guid: 3ba812dccbc11dc4a9bad6ba151ecdd8
+>>>>>>> af1d3fa0d735d225c1d15768be757c44f4096785
 ========
 guid: d359864655310b14cb717826b9e9ea3d
 >>>>>>>> ece5299f5e0954d2de9008bc8a5d03e105dbf67a:Assets/PreFab/Cupcake.prefab.meta
