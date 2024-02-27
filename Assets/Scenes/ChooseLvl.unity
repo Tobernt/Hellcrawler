@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 327337474}
   - component: {fileID: 327337473}
   - component: {fileID: 327337472}
+  - component: {fileID: 327337475}
   m_Layer: 5
   m_Name: Level 5
   m_TagString: Untagged
@@ -474,9 +475,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -524,6 +525,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327337470}
   m_CullTransparentMesh: 1
+--- !u!114 &327337475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327337470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 5
 --- !u!1 &433573166
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +684,7 @@ GameObject:
   - component: {fileID: 478107363}
   - component: {fileID: 478107362}
   - component: {fileID: 478107361}
+  - component: {fileID: 478107364}
   m_Layer: 5
   m_Name: Level 3
   m_TagString: Untagged
@@ -741,9 +756,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,6 +806,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478107359}
   m_CullTransparentMesh: 1
+--- !u!114 &478107364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478107359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 3
 --- !u!1 &531598248
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +965,7 @@ GameObject:
   - component: {fileID: 643868644}
   - component: {fileID: 643868643}
   - component: {fileID: 643868642}
+  - component: {fileID: 643868645}
   m_Layer: 5
   m_Name: Level 7
   m_TagString: Untagged
@@ -1008,9 +1037,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1058,6 +1087,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643868640}
   m_CullTransparentMesh: 1
+--- !u!114 &643868645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643868640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 7
 --- !u!1 &736463425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1112,7 @@ GameObject:
   - component: {fileID: 736463429}
   - component: {fileID: 736463428}
   - component: {fileID: 736463427}
+  - component: {fileID: 736463430}
   m_Layer: 5
   m_Name: MainmenuButton
   m_TagString: Untagged
@@ -1141,9 +1184,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1191,6 +1234,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736463425}
   m_CullTransparentMesh: 1
+--- !u!114 &736463430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736463425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 0
 --- !u!1 &809264616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,6 +1259,7 @@ GameObject:
   - component: {fileID: 809264620}
   - component: {fileID: 809264619}
   - component: {fileID: 809264618}
+  - component: {fileID: 809264621}
   m_Layer: 5
   m_Name: Level 1
   m_TagString: Untagged
@@ -1274,9 +1331,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1324,6 +1381,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809264616}
   m_CullTransparentMesh: 1
+--- !u!114 &809264621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809264616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 1
 --- !u!1 &821967782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,6 +2182,7 @@ GameObject:
   - component: {fileID: 1479933577}
   - component: {fileID: 1479933576}
   - component: {fileID: 1479933575}
+  - component: {fileID: 1479933578}
   m_Layer: 5
   m_Name: Level 4
   m_TagString: Untagged
@@ -2183,9 +2254,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2233,6 +2304,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479933573}
   m_CullTransparentMesh: 1
+--- !u!114 &1479933578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479933573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 4
 --- !u!1 &1516766755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,6 +2597,7 @@ GameObject:
   - component: {fileID: 1786578011}
   - component: {fileID: 1786578010}
   - component: {fileID: 1786578009}
+  - component: {fileID: 1786578012}
   m_Layer: 5
   m_Name: Level 6
   m_TagString: Untagged
@@ -2584,9 +2669,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2634,6 +2719,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786578007}
   m_CullTransparentMesh: 1
+--- !u!114 &1786578012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786578007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 6
 --- !u!1 &1896486377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2744,7 @@ GameObject:
   - component: {fileID: 1896486381}
   - component: {fileID: 1896486380}
   - component: {fileID: 1896486379}
+  - component: {fileID: 1896486382}
   m_Layer: 5
   m_Name: Level 2
   m_TagString: Untagged
@@ -2717,9 +2816,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2767,6 +2866,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896486377}
   m_CullTransparentMesh: 1
+--- !u!114 &1896486382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896486377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 2
 --- !u!1 &1984638227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,6 +2891,7 @@ GameObject:
   - component: {fileID: 1984638231}
   - component: {fileID: 1984638230}
   - component: {fileID: 1984638229}
+  - component: {fileID: 1984638232}
   m_Layer: 5
   m_Name: Level 8
   m_TagString: Untagged
@@ -2850,9 +2963,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450518267}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: StartScene
+      - m_Target: {fileID: 1450518268}
+        m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2900,6 +3013,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984638227}
   m_CullTransparentMesh: 1
+--- !u!114 &1984638232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984638227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707cc8052ab017046a0d4450c39f716d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelIndex: 8
 --- !u!1 &2003944578
 GameObject:
   m_ObjectHideFlags: 0

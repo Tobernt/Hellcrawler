@@ -13,7 +13,7 @@ public class ChooseLvl : MonoBehaviour
         button.onClick.AddListener(OnClick);
     }
 
-    void OnClick()
+    public void OnClick()
     {
         // Ladda den specifika nivån när knappen klickas
         SceneManager.LoadScene(levelIndex);
