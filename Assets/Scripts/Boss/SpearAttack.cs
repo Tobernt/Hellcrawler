@@ -10,7 +10,7 @@ public class SpearAttack : MonoBehaviour
     private float delayBeforeAttack = 4.0f;
     private bool isAttacking = false;
     private float spacing;  // Adjust this value for the spacing between spears
-    private float yPos;  // Store the calculated y-position
+    private static List<float> yPosList = new List<float>();  // Store the yPos of each spawned spear
 
     void Start()
     {
@@ -37,11 +37,17 @@ public class SpearAttack : MonoBehaviour
             // Set the spacing value when starting the attack
             spacing = 0.25f; // Adjust this value for the spacing between spears
 
-            // Calculate the initial yPos
-            yPos = mainCamera.position.y - 3.75f + spacing * transform.GetSiblingIndex() + 0.5f;
+            // Calculate the initial yPos based on the previously spawned spear's yPos
+            float yPos = yPosList.Count > 0 ? yPosList[yPosList.Count - 1] + spacing : mainCamera.position.y - 1.75f + 0.5f;
 
-            // Start the attack after the specified delay
-            Invoke("StartAttack", delayBeforeAttack);
+            // Set the initial yPos when the attack starts
+            transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
+
+            // Add the yPos to the list
+            yPosList.Add(yPos);
+
+            // Start the attack coroutine
+            StartCoroutine(AttackCoroutine());
         }
         else
         {
@@ -49,12 +55,34 @@ public class SpearAttack : MonoBehaviour
         }
     }
 
+    IEnumerator AttackCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(delayBeforeAttack);
+
+            StartAttack();
+        }
+    }
+
     void StartAttack()
     {
         isAttacking = true;
 
+        // Set the yPos based on the previously spawned spear's yPos
+        float yPos = yPosList.Count > 0 ? yPosList[yPosList.Count - 1] + spacing : mainCamera.position.y - 1.75f + 0.5f;
+
+        // Reset yPos to the bottom if it exceeds the upper limit
+        if (yPos > mainCamera.position.y + 1.75f)
+        {
+            yPos = mainCamera.position.y - 1.75f + spacing;
+        }
+
         // Set the initial yPos when the attack starts
         transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
+
+        // Add the yPos to the list
+        yPosList.Add(yPos);
     }
 
     void Update()

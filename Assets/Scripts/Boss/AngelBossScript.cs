@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AngelBossScript : MonoBehaviour
 {
-    public int Health = 9;
+    public int Health = 6;
     private float speed = 0.5f;
     private float movementSpeed = 1.0f;
     private float RotAngleZ = 10;
@@ -20,11 +20,11 @@ public class AngelBossScript : MonoBehaviour
     private bool phaseOne = true;
     private bool phaseTwo = false;
     private bool spearsSpawned = false;
-    private bool phaseThree = false;
     private SecondPhasePlatform[] secondPhasePlatforms;
     private int currentSpearIndex = 0;
-    private int totalSpears = 22;
     private float delayBetweenSpears = 1f;
+    private float lastHitTime = 0f;
+    private float hitCooldown = 3f;
 
     private bool Hit = false;
 
@@ -106,7 +106,7 @@ public class AngelBossScript : MonoBehaviour
         transform.Translate(movement);
 
 
-        if (Health == 6 && phaseOne == true)
+        if (Health == 3 && phaseOne == true)
         {
             foreach (GameObject platforms in allPlatforms)
             {
@@ -121,15 +121,11 @@ public class AngelBossScript : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (Health >= 6 && phaseOne)
+        if (Health >= 3 && phaseOne)
         {
             swordSpawnTimer += Time.deltaTime;
         }
 
-        if (Health >= 3 && phaseTwo)
-        {
-
-        }
 
         if (swordSpawnTimer >= swordSpawnInterval)
         {
@@ -141,13 +137,15 @@ public class AngelBossScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && Health >= 0)
+        if (collision.gameObject.tag == "Player" && Health >= 0 && Time.time - lastHitTime >= hitCooldown)
         {
             Health--;
             foreach (GameObject platforms in allPlatforms)
                 platforms.SetActive(false);
             Hit = true;
 
+            // Update the last hit time
+            lastHitTime = Time.time;
         }
     }
 
