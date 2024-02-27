@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8355942056801937235}
   - component: {fileID: 6801699987680957778}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Initial Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96f02339e179474285868367f6b507b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platform: {fileID: 6407698659380717336, guid: 2e53c3504f04b114db2733d0aa98744b, type: 3}
+  Platform: {fileID: 0}

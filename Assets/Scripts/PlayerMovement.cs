@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 6f;
     private bool isFacingRight = true;
     private int doubleJump = 0;
+<<<<<<< HEAD
     private Collider2D _collider;
     private bool Paused = true;
+=======
+>>>>>>> 9ac296b37d0f798cc0c7e4a1069f0202cb0b5c64
 
     [Header("Movement variables")]
-    [SerializeField] private bool _active = true;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -21,13 +23,13 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        _collider = GetComponent<Collider2D>();
         Time.timeScale = 0;
     }
 
 void Update()
     {
 
+<<<<<<< HEAD
         if (!_active)
         {
             return;
@@ -37,6 +39,13 @@ void Update()
         horizontal = Input.GetAxisRaw("Horizontal");
 
 
+=======
+        void ResumeGame()
+        {
+            Time.timeScale = 1;
+        }
+
+>>>>>>> 9ac296b37d0f798cc0c7e4a1069f0202cb0b5c64
         if (Input.GetButtonDown("Horizontal")) ;
         {
             anim.Play("RunningAnim");
@@ -88,16 +97,4 @@ private void Flip()
             transform.localScale = localScale;
         }
     }
-
-private void MiniJump()
-    {
-        rb.velocity = new Vector2(rb.velocity.x, jumpingPower / 2);
-	}
-
-public void Die()
-    {
-        _active = false;
-        _collider.enabled = false;
-        MiniJump();
-	}
 }
