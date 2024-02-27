@@ -4,7 +4,7 @@ public class SecondPhasePlatform : MonoBehaviour
 {
     private float speed = 0.5f;
     private float movementSpeed = 1.0f;
-    private float range = 2.5f;  // Range of movement
+    private float range = 2.2f;  // Range of movement
     private Vector3 movement;
 
     // Update is called once per frame
@@ -22,5 +22,11 @@ public class SecondPhasePlatform : MonoBehaviour
         // Move within the range
         movement = Vector3.up * movementSpeed * Time.deltaTime;
         transform.Translate(movement);
+    }
+
+    // Method to activate the platform
+    public void SetActivePlatform(bool active)
+    {
+        gameObject.SetActive(active);
     }
 }
