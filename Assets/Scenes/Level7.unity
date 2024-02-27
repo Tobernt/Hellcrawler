@@ -260,15 +260,15 @@ Canvas:
   m_GameObject: {fileID: 63979752}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 1369702867}
-  m_PlaneDistance: 10
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 1
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1887,25 +1887,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScrollingBackground: {fileID: 466884779}
   checkpointGround: {fileID: 0}
-<<<<<<< HEAD
-=======
---- !u!114 &1668966728 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -5335191894486572307, guid: e4a925d252aaa5d488bce68856f51b8f, type: 3}
-  m_PrefabInstance: {fileID: 417016626}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 616705bb8bddf4341b418c99a9bc4890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1668966729 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6137841913080806969, guid: e4a925d252aaa5d488bce68856f51b8f, type: 3}
-  m_PrefabInstance: {fileID: 417016626}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> 9ac296b37d0f798cc0c7e4a1069f0202cb0b5c64
 --- !u!1 &1699998073
 GameObject:
   m_ObjectHideFlags: 0
