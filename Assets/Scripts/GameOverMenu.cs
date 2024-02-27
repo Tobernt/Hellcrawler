@@ -18,10 +18,10 @@ public class GameOverMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        if (Button == "Restart Game")
+        /*if (== "Restart Game")
         {
             SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
-        }
+        }*/
     }
    
 }
