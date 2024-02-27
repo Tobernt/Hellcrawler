@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/PreFab/SecondPhasePlatform.prefab.meta
+guid: 5c1f51ab3f02771479afc0fc83ad2f61
+PrefabImporter:
+========
 guid: 380f9bc177657f04c930c79f34267423
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> ece5299f5e0954d2de9008bc8a5d03e105dbf67a:Assets/Materials/Candy.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

@@ -16,14 +16,17 @@ public class AngelBossScript : MonoBehaviour
     private float directionVertical;
     private float swordSpawnTimer = 0f;
     private float swordSpawnInterval = 6f;
-
-
+    private bool phaseTwoActivated = false;
     private bool phaseOne = true;
     private bool phaseTwo = false;
+    private bool spearsSpawned = false;
     private bool phaseThree = false;
+    private SecondPhasePlatform[] secondPhasePlatforms;
+    private int currentSpearIndex = 0;
+    private int totalSpears = 22;
+    private float delayBetweenSpears = 1f;
 
     private bool Hit = false;
-
 
     GameObject[] allPlatforms;
 
@@ -34,21 +37,33 @@ public class AngelBossScript : MonoBehaviour
     void Start()
     {
         allPlatforms = GameObject.FindGameObjectsWithTag("BossPlatforms");
-        DeactivateBossPlatforms2();
+        secondPhasePlatforms = FindObjectsOfType<SecondPhasePlatform>();
+        DeactivateSecondPhasePlatforms();
     }
-    private void DeactivateBossPlatforms2()
-    {
-        GameObject[] bossPlatforms2 = GameObject.FindGameObjectsWithTag("BossPlatforms2");
 
-        foreach (GameObject platform in bossPlatforms2)
-        {
-            platform.SetActive(false);
-            Debug.Log("Deactivating platform: " + platform.name);
-        }
-    }
     // Update is called once per frame
     void Update()
     {
+
+        if (phaseTwo && !spearsSpawned)
+        {
+            InvokeRepeating("SpawnSingleSpear", 0f, delayBetweenSpears); // Adjust the delay as needed
+            spearsSpawned = true; // Set the flag to true to indicate spears are spawned
+        }
+
+
+        if (phaseTwo && !phaseTwoActivated)
+        {
+            Debug.Log("Entering phaseTwo");
+
+            // Activate second phase platforms
+            foreach (SecondPhasePlatform platform in secondPhasePlatforms)
+            {
+                platform.SetActivePlatform(true);
+            }
+
+            phaseTwoActivated = true; // Set the flag to true to indicate phase two has been activated
+        }
 
         if (Hit == true)
         {
@@ -101,19 +116,6 @@ public class AngelBossScript : MonoBehaviour
             }
         }
 
-        if (phaseTwo)
-        {
-            Debug.Log("Entering phaseTwo");
-            GameObject[] bossPlatforms2 = GameObject.FindGameObjectsWithTag("BossPlatforms2");
-
-            foreach (GameObject platform in bossPlatforms2)
-            {
-                platform.SetActive(true);
-                Debug.Log("Activating platform: " + platform.name);
-            }
-        }
-
-
         if (Health <= 0)
         {
             Destroy(this.gameObject);
@@ -122,6 +124,11 @@ public class AngelBossScript : MonoBehaviour
         if (Health >= 6 && phaseOne)
         {
             swordSpawnTimer += Time.deltaTime;
+        }
+
+        if (Health >= 3 && phaseTwo)
+        {
+
         }
 
         if (swordSpawnTimer >= swordSpawnInterval)
@@ -154,6 +161,15 @@ public class AngelBossScript : MonoBehaviour
         }
     }
 
+    private void DeactivateSecondPhasePlatforms()
+    {
+        // Deactivate second phase platforms at the start
+        foreach (SecondPhasePlatform platform in secondPhasePlatforms)
+        {
+            platform.gameObject.SetActive(false);
+        }
+    }
+
     private void SpawnSwords()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -180,6 +196,36 @@ public class AngelBossScript : MonoBehaviour
             Quaternion spawnRotation = Quaternion.LookRotation(Vector3.forward, player.transform.position - spawnPosition) * Quaternion.Euler(0, 0, -37);
 
             Instantiate(Resources.Load<GameObject>("PreFab/Sword"), spawnPosition, spawnRotation);
+        }
+    }
+
+
+    private void SpawnSingleSpear()
+    {
+        float startY = -1.75f;
+        float endY = 1.75f;
+        float spacing = 0.25f;
+        float xPosLeft = -3.7f;
+        float xPosRight = 3.7f;
+
+        if (startY + currentSpearIndex * spacing <= endY)
+        {
+            // Spawn spear on the left side
+            Vector3 leftSpawnPosition = new Vector3(xPosLeft, startY + currentSpearIndex * spacing, 1);
+            Quaternion leftSpawnRotation = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load<GameObject>("PreFab/Spear"), leftSpawnPosition, leftSpawnRotation);
+
+            // Spawn spear on the right side with rotation
+            Vector3 rightSpawnPosition = new Vector3(xPosRight, startY + currentSpearIndex * spacing, 1);
+            Quaternion rightSpawnRotation = Quaternion.Euler(0, 0, 180); // Rotate the spear on the right side
+            Instantiate(Resources.Load<GameObject>("PreFab/Spear"), rightSpawnPosition, rightSpawnRotation);
+
+            currentSpearIndex++;
+        }
+        else
+        {
+            // Reset the spear spawning when all spears are spawned
+            currentSpearIndex = 0;
         }
     }
 }
