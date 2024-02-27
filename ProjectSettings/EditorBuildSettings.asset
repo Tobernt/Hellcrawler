@@ -4,21 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 16883b2121989f140b53c963ab72409f
-  - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 3f5db1902d803c9459e0b3c3a5ba7292
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Erika Lvl2.unity
-=======
-    path: Assets/Scenes/Level2.unity
->>>>>>> db0932e190911e00245907d323d1eda25c98c480
-    guid: 8a2ab2f760f6021479b1663ac25c0ab9
-  - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: 58c7eaa0258eebd4886df478abf1531c
+  m_Scenes: []
   m_configObjects: {}

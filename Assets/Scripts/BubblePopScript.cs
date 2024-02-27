@@ -8,7 +8,7 @@ public class BubblePopScript : MonoBehaviour
 
     public Animator anim;
     public bool time = false;
-    private float timer = 1f;
+    private float timer = 2.5f;
     
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -88,16 +88,4 @@ private void Flip()
             transform.localScale = localScale;
         }
     }
-
-private void MiniJump()
-    {
-        rb.velocity = new Vector2(rb.velocity.x, jumpingPower / 2);
-	}
-
-public void Die()
-    {
-        _active = false;
-        _collider.enabled = false;
-        MiniJump();
-	}
 }

@@ -8,7 +8,8 @@ public class Deathcheck : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-             //On Death of Player
+            //On Death of Player
+            // Insert GameOverMenu
         }
         Destroy(collision.gameObject);
     }
