@@ -21,7 +21,7 @@ public class Cameracontrol : MonoBehaviour
     {
         transform.position += new Vector3(0, speed * Time.deltaTime);
 
-        if (transform.position.y > 5)
+        if (transform.position.y > 50)
         {
             speed = 0;
             ScrollingBackground.GetComponent<ScrollingBackground>().speed = 0f;

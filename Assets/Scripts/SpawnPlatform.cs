@@ -26,7 +26,7 @@ public class SpawnPlatform : MonoBehaviour
     {
         spawnTime += Time.deltaTime;
 
-        if (transform.position.y > 5)
+        if (transform.position.y > 50)
         {
             Destroy(this.gameObject);
         }
