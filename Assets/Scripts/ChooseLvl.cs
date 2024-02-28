@@ -38,4 +38,8 @@ public class ChooseLvl : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void ChooseLevel()
+    {
+        SceneManager.LoadScene(8);
+    }
 }
