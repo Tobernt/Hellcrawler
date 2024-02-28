@@ -23,14 +23,8 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 0;
     }
 
-void Update()
+    void Update()
     {
-        /*if (!_active)
-        {
-            return;
-        }*/
-
-
         horizontal = Input.GetAxisRaw("Horizontal");
 
         void ResumeGame()
@@ -38,7 +32,7 @@ void Update()
             Time.timeScale = 1;
         }
 
-        if (Input.GetButtonDown("Horizontal")) ;
+        if (Input.GetButtonDown("Horizontal"))
         {
             anim.Play("RunningAnim");
         }
@@ -49,7 +43,7 @@ void Update()
             Paused = false;
         }
 
-            if (Input.GetButtonDown("Jump") && doubleJump < 1)
+        if (Input.GetButtonDown("Jump") && doubleJump < 1)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             doubleJump++;
@@ -60,7 +54,7 @@ void Update()
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        if(IsGrounded())
+        if (IsGrounded())
         {
             doubleJump = 0;
         }
@@ -79,7 +73,7 @@ void Update()
     }
 
 
-private void Flip()
+    private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {

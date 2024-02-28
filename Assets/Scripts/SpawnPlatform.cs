@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class SpawnPlatform : MonoBehaviour
 {
-
     public GameObject Platform;
     private float spawnTime = 5f;
 
     // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         InvokeRepeating("spawnPlatform", spawnTime, spawnTime);
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-2f, 2f), this.transform.position.y, 0);
@@ -28,7 +27,7 @@ public class SpawnPlatform : MonoBehaviour
     {
         spawnTime += Time.deltaTime;
 
-        if (transform.position.y > 50)
+        if (transform.position.y > 5)
         {
             Destroy(this.gameObject);
         }

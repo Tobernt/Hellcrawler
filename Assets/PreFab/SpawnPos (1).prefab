@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6137841913080806969}
   - component: {fileID: 4409618196166102266}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SpawnPos (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7507ceb7b7f9f48bee38a73ce35feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  MainCamera: {fileID: 0}
   Platform: {fileID: 7617284657458047798, guid: d574330305b1b0940856863b0ff33c0e, type: 3}

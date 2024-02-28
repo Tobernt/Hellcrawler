@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 215130161085233256}
   - component: {fileID: 8279512681088156640}
   - component: {fileID: 8683504134199752688}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: BubblesPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,3 +231,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 215130161085233256}
+  time: 0
