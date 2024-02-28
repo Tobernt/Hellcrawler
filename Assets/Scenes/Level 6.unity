@@ -1682,9 +1682,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4079c204a640b4c9e2098da72dece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}
-  player: {fileID: 0}
+  scoreText: {fileID: 1285448794}
+  highscoreText: {fileID: 1699998075}
+  player: {fileID: 1051143077}
 --- !u!114 &1104862506
 MonoBehaviour:
   m_ObjectHideFlags: 0
