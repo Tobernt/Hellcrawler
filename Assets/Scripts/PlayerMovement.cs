@@ -26,11 +26,6 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        void ResumeGame()
-        {
-            Time.timeScale = 1;
-        }
-
         if (Input.GetButtonDown("Horizontal"))
         {
             anim.Play("RunningAnim");
