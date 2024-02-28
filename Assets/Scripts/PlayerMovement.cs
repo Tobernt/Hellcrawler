@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 6f;
     private bool isFacingRight = true;
     private int doubleJump = 0;
-    private Collider2D _collider;
     private bool Paused = true;
 
     [Header("Movement variables")]
