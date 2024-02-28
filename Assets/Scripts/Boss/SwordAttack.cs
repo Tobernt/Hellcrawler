@@ -41,11 +41,9 @@ public class SwordAttack : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
     }
-
      
     void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.CompareTag("Player"))
         {            
             // Destroy the player object upon collision

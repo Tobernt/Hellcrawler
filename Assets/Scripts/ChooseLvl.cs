@@ -10,7 +10,7 @@ public class ChooseLvl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    public void Levlel2()
+    public void Level2()
     {
         SceneManager.LoadScene(2);
     }

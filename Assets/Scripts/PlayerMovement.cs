@@ -68,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
@@ -84,7 +83,6 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Attack"))
         {
             Time.timeScale = 0;
-            //GameObject GameOver; = GameObject.FindGameObjectWithTag("GameOverTag");
             GameOver.SetActive(true);
         }
     }

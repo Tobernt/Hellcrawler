@@ -1526,7 +1526,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 2003944580}
   m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2717,7 +2717,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1450518272}
         m_TargetAssemblyTypeName: ChooseLvl, Assembly-CSharp
-        m_MethodName: Levlel2
+        m_MethodName: Level2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -9,13 +9,12 @@ public class SpaceSpawnPlatform : MonoBehaviour
     private float spaceSpawnTime = 5f;
 
     // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         InvokeRepeating("spawnPlatform", spaceSpawnTime, spaceSpawnTime);
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-2f, 2f), this.transform.position.y, 0);
         Instantiate(spaceSpawnPlatform, randomSpawnPosition, Quaternion.identity);
     }
-    // Update is called once per frame
 
     void SpacespawnPlatform()
     {

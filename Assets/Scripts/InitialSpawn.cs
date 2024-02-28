@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class InitialSpawn : MonoBehaviour
 {
-
     public GameObject Platform;
 
     // Start is called before the first frame update
@@ -13,11 +12,5 @@ public class InitialSpawn : MonoBehaviour
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-2f, 2f), this.transform.position.y, 0);
         Instantiate(Platform, randomSpawnPosition, Quaternion.identity);
         Destroy(this.gameObject);
-    }
-    // Update is called once per frame
-
-    void Update()
-    {
-
     }
 }

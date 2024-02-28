@@ -76,7 +76,6 @@ public class AngelBossScript : MonoBehaviour
             reactivatePlatforms();
             Hit = false;
             reactivateTimer = 0;
-
         }
 
         float rz = Mathf.SmoothStep(-10, RotAngleZ, Mathf.PingPong(Time.time * speed, 1));
@@ -134,7 +133,6 @@ public class AngelBossScript : MonoBehaviour
             SpawnSwords();
             swordSpawnTimer = 0f;
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -198,8 +196,6 @@ public class AngelBossScript : MonoBehaviour
             Instantiate(Resources.Load<GameObject>("PreFab/Sword"), spawnPosition, spawnRotation);
         }
     }
-
-
     private void SpawnSingleSpear()
     {
         float startY = -1.75f;
