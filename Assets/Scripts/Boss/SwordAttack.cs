@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class SwordAttack : MonoBehaviour
 {
     private Transform player;
     private Transform mainCamera;
     public float rotationOffsetZ = -37.0f; // Adjust this value as needed
-    private float speed =1.2f;
+    private float speed = 1.2f;
     private float delayBeforeAttack = 1.0f; // Adjust this value for the delay before attacking
     private bool isAttacking = false;
 
     void Start()
-    {
+    {        
         player = GameObject.FindGameObjectWithTag("Player").transform;
         mainCamera = Camera.main.transform;
 
@@ -41,10 +42,12 @@ public class SwordAttack : MonoBehaviour
         }
     }
 
+     
     void OnTriggerEnter2D(Collider2D other)
     {
-            if (other.CompareTag("Player"))
-        {
+
+        if (other.CompareTag("Player"))
+        {            
             // Destroy the player object upon collision
             Destroy(other.gameObject);
             Destroy(this.gameObject);

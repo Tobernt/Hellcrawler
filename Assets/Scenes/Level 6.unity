@@ -856,7 +856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: 14c2c727ec503744da7e34a535e0e440, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 10.36
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: 14c2c727ec503744da7e34a535e0e440, type: 3}
       propertyPath: m_LocalRotation.w
@@ -961,7 +961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: 14c2c727ec503744da7e34a535e0e440, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 10.37
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: 14c2c727ec503744da7e34a535e0e440, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
+  GameOver: {fileID: 1657382949}
   rb: {fileID: 1051143075}
   groundCheck: {fileID: 1015699689}
   groundLayer:
@@ -2501,7 +2502,7 @@ Transform:
   m_GameObject: {fileID: 1353787388}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.31, z: 1}
+  m_LocalPosition: {x: -0, y: 1.31, z: 10.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2519,7 +2520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed37f60652e8f3f40804e6b15ed7d10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
+  Health: 6
 --- !u!50 &1353787393
 Rigidbody2D:
   serializedVersion: 4
@@ -2732,7 +2733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: 1bb6c37c5eccb524a9aca3e857f59e29, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 10.16
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: 1bb6c37c5eccb524a9aca3e857f59e29, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2790,7 +2791,7 @@ GameObject:
   - component: {fileID: 1657382951}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: Untagged
+  m_TagString: GameOverTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2802,7 +2803,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657382949}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -3428,10 +3429,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1369702868}
     m_Modifications:
-    - target: {fileID: 978128060934262682, guid: 5c1f51ab3f02771479afc0fc83ad2f61, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: f0ad275525c10024b94ead258bfa53b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -3442,7 +3439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: f0ad275525c10024b94ead258bfa53b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 10.37
       objectReference: {fileID: 0}
     - target: {fileID: 1987501173691934853, guid: f0ad275525c10024b94ead258bfa53b9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3479,6 +3476,10 @@ PrefabInstance:
     - target: {fileID: 7617284657458047798, guid: f0ad275525c10024b94ead258bfa53b9, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978128060934262682, guid: 5c1f51ab3f02771479afc0fc83ad2f61, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BubblePopScript : MonoBehaviour
 {
-    // public GameObject Player = new GameObject("Player");
-
     public Animator anim;
     public bool time = false;
     private float timer = 2.5f;

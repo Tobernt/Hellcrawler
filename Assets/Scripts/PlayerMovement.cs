@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private int doubleJump = 0;
     private bool Paused = true;
 
+    public GameObject GameOver;
+
     [Header("Movement variables")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -75,6 +77,15 @@ public class PlayerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Attack"))
+        {
+            Time.timeScale = 0;
+            //GameObject GameOver; = GameObject.FindGameObjectWithTag("GameOverTag");
+            GameOver.SetActive(true);
         }
     }
 }
