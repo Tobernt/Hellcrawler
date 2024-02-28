@@ -29,6 +29,7 @@ public class AngelBossScript : MonoBehaviour
     private bool Hit = false;
 
     GameObject[] allPlatforms;
+    public GameObject CheckpointDoor;
 
     private float reactivateTimer = 0f;
     Vector3 movement;
@@ -118,6 +119,7 @@ public class AngelBossScript : MonoBehaviour
 
         if (Health <= 0)
         {
+            CheckpointDoor.SetActive(true);
             Destroy(this.gameObject);
         }
 
