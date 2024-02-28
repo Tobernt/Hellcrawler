@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 390.43, y: -86.185}
-  m_SizeDelta: {x: -890, y: 50}
+  m_AnchoredPosition: {x: 367.38, y: -86.185}
+  m_SizeDelta: {x: -843.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73269427
 MonoBehaviour:
@@ -677,6 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
+  GameOver: {fileID: 0}
   rb: {fileID: 238508877}
   groundCheck: {fileID: 1858414044}
   groundLayer:
@@ -905,6 +906,7 @@ MonoBehaviour:
   scoreText: {fileID: 295492971}
   highscoreText: {fileID: 73269427}
   player: {fileID: 238508872}
+  GameOverHighscore: {fileID: 458616804}
 --- !u!114 &295492971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1218,7 +1220,7 @@ GameObject:
   - component: {fileID: 458616804}
   - component: {fileID: 458616803}
   m_Layer: 5
-  m_Name: Highscore
+  m_Name: GameOverHighscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,9 +1257,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4079c204a640b4c9e2098da72dece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}
-  player: {fileID: 0}
+  scoreText: {fileID: 295492971}
+  highscoreText: {fileID: 73269427}
+  player: {fileID: 238508872}
+  GameOverHighscore: {fileID: 458616804}
 --- !u!114 &458616804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,7 +1547,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572069081}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -1576,7 +1579,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 572069084}
   m_OnClick:
     m_PersistentCalls:
@@ -3459,7 +3462,7 @@ GameObject:
   - component: {fileID: 2126523598}
   - component: {fileID: 2126523597}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Highscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3516,7 +3519,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 793369892}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3623,10 +3626,10 @@ SceneRoots:
   - {fileID: 793369893}
   - {fileID: 238508872}
   - {fileID: 2126523600}
-  - {fileID: 1367880171}
   - {fileID: 605712778}
   - {fileID: 1832762669}
   - {fileID: 862167452}
   - {fileID: 2111991089}
   - {fileID: 1749358187}
   - {fileID: 338394635}
+  - {fileID: 1367880171}

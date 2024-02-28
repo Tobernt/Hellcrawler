@@ -723,6 +723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
+  GameOver: {fileID: 650650766}
   rb: {fileID: 215629915}
   groundCheck: {fileID: 542237723}
   groundLayer:
@@ -1555,6 +1556,7 @@ MonoBehaviour:
   scoreText: {fileID: 958843017}
   highscoreText: {fileID: 1742542845}
   player: {fileID: 215629910}
+  GameOverHighscore: {fileID: 1067539878}
 --- !u!114 &958843017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,7 +1801,7 @@ GameObject:
   - component: {fileID: 1067539878}
   - component: {fileID: 1067539877}
   m_Layer: 5
-  m_Name: Highscore
+  m_Name: GameOverHighscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1836,9 +1838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4079c204a640b4c9e2098da72dece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}
-  player: {fileID: 0}
+  scoreText: {fileID: 958843017}
+  highscoreText: {fileID: 1742542845}
+  player: {fileID: 215629910}
+  GameOverHighscore: {fileID: 1067539878}
 --- !u!114 &1067539878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2395,7 +2398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620089863}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2427,7 +2430,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1620089866}
   m_OnClick:
     m_PersistentCalls:

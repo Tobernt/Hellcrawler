@@ -662,7 +662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.77000004}
   m_AnchorMax: {x: 1, y: 0.77000004}
-  m_AnchoredPosition: {x: -85.235, y: 23.334}
+  m_AnchoredPosition: {x: -85.234985, y: 23.334}
   m_SizeDelta: {x: 170.4801, y: 46.668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679524728
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 717163456}
   - component: {fileID: 717163455}
   m_Layer: 5
-  m_Name: Highscore
+  m_Name: GameOverHighscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,9 +812,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4079c204a640b4c9e2098da72dece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}
-  player: {fileID: 0}
+  scoreText: {fileID: 868270606}
+  highscoreText: {fileID: 679524728}
+  player: {fileID: 1937186480}
+  GameOverHighscore: {fileID: 717163456}
 --- !u!114 &717163456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,7 +1132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -85.238, y: -23.5585}
+  m_AnchoredPosition: {x: -85.23801, y: -23.558502}
   m_SizeDelta: {x: 170.48, y: 37.1062}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868270605
@@ -1149,6 +1150,7 @@ MonoBehaviour:
   scoreText: {fileID: 868270606}
   highscoreText: {fileID: 679524728}
   player: {fileID: 1937186480}
+  GameOverHighscore: {fileID: 717163456}
 --- !u!114 &868270606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,7 +1806,7 @@ GameObject:
   - component: {fileID: 1523414606}
   - component: {fileID: 1523414605}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Highscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,9 +1861,9 @@ Canvas:
   m_GameObject: {fileID: 1523414604}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1878447313}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2569,7 +2571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingPower: 4.5
-  GameOver: {fileID: 0}
+  GameOver: {fileID: 745884721}
   rb: {fileID: 1937186485}
   groundCheck: {fileID: 42904874}
   groundLayer:
@@ -3323,6 +3325,6 @@ SceneRoots:
   - {fileID: 1878447314}
   - {fileID: 1937186480}
   - {fileID: 1523414608}
-  - {fileID: 176373921}
   - {fileID: 1030065621}
   - {fileID: 895352275}
+  - {fileID: 176373921}

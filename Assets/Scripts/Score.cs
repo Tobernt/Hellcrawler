@@ -6,6 +6,7 @@ public class Score : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text highscoreText;
     public Transform player;
+    public TMP_Text GameOverHighscore;
 
     private float highscore = 0f;
 
@@ -24,6 +25,7 @@ public class Score : MonoBehaviour
         {
             highscore = playerPositionY;
             UpdateHighscoreText();
+            GameOverScore();
 
             PlayerPrefs.SetFloat("Highscore: ", highscore);
             PlayerPrefs.Save();
@@ -32,5 +34,9 @@ public class Score : MonoBehaviour
     void UpdateHighscoreText()
     {
         highscoreText.text = "Highscore: " + highscore.ToString("0");
+    }
+    void GameOverScore()
+    {
+        GameOverHighscore.text = "Highscore: " + highscore.ToString("0");
     }
 }
